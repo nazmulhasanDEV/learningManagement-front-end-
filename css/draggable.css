@@ -1,0 +1,158 @@
+/*DRAG HOLDER
+*/
+.drags-holder {
+    min-height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+  }
+
+.wjec-drop{
+    width: 100px !important;
+}
+.wjec-drag i{
+    display: none;
+}
+  
+  /*DRAGS
+  */
+  .ui-draggable,
+  .wjec-drop {
+    text-align: center;
+  }
+  
+  .drags-holder .ui-draggable {
+    margin: 5px;
+  }
+  
+  .ui-draggable {
+    border: 1px solid;
+    border: 1px solid grey;
+    border-radius: 12px;
+    cursor: move;
+    padding: 4px 7px;
+    font-size: 16px;
+    white-space: nowrap;
+    display: inline-flex;
+}
+  
+  .ui-draggable-dragging {
+    background: #666;
+    -webkit-box-shadow: 10px 10px 8px -1px rgba(0, 0, 0, .32);
+    -moz-box-shadow: 10px 10px 8px -1px rgba(0, 0, 0, .32);
+    box-shadow: 10px 10px 8px -1px rgba(0, 0, 0, .32);
+  }
+  
+  .incorrect, .drag-incorrect {
+    background-color: #a1010136 !important;
+    color: rgb(5, 0, 0) ;
+    border-radius: 8px;
+  }
+  
+  .correct, .drag-correct {
+    background-color: #3da759 !important;
+    color: #FFF !important;
+   
+  }
+  .clues{
+      width: 30% !important;
+      min-width: 153px;
+  }
+  
+  .drag-correct, .drag-incorrect {
+    border: none !important;
+  }
+  
+  .fa-times, .fa-check, .showAnswersBtn {
+    display: none;
+  }
+  
+  .correct-text {
+    background: #3da759;
+    color: #FFF;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2px 5px;
+    min-width: 80px;
+    font-size: 16px;
+  }
+  .wjec-drag-and-drop{
+      display: flex;
+  }
+  
+  /*DROPS
+  */
+  .wjec-drag-and-drop-text .ui-droppable, .correct-text {
+    /* width: 90px; */
+    position: relative;
+    height: 42px;
+    vertical-align: middle;
+
+  }
+  .wjec-drag-and-drop-text{
+
+      width: 70% !important;
+  }
+  
+  .correct-text {
+    display: inline-block;
+  }
+  
+  .wjec-drag-and-drop-text .ui-droppable {
+    border-bottom: 1px solid black;
+    display: none;
+  }
+  
+  .wjec-drag-and-drop-text p, .correct-answers p {
+    line-height: 2em;
+    font-size: 16px;
+  }
+  
+  .drag-and-drop-text p .drop {
+    line-height: 1.8em;
+  }
+  
+  /*FEEDBACK*/
+  .feedback {
+    visibility: hidden;
+    min-height: 3em;
+  }
+  
+  .feedback h4, .user-answers-header, .correct-answers, .resetBtn {
+    display: none;
+  }
+  
+  .modal p {
+    font-size: 16px;
+  }
+  
+  .correct-answers-content {
+    max-height: 150px;
+    overflow-y: scroll;
+  }
+  
+  @media (min-width: 768px){
+    .drags-holder {
+      display: block;
+    }
+    
+    .wjec-drag-and-drop-text, .correct-answers-content {
+      max-height: none !important;
+      overflow: visible;
+      overflow-y: visible !important;
+    }
+    
+    .wjec-drag-and-drop-text .ui-droppable {
+      display: inline-block;
+    }
+    
+    .dropdown {
+      display: none;
+    }
+    
+    .ui-droppable {
+      display: inline-block;
+    }
+  }

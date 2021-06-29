@@ -1,0 +1,5 @@
+.slider_item_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

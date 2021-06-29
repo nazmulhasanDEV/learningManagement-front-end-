@@ -1,0 +1,703 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body,
+html {
+  height: auto;
+  width: 100%;
+}
+ .checkboxSubjects {
+
+font-size:1.3em;
+background-color:white:
+border-radius:5px;
+}
+.__container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ /* overflow-y: scroll;*/
+ 
+  margin-bottom:15px;
+}
+
+.__container header {
+  height: 150px;
+  background-color: blue;
+  width: 100%;
+}
+
+.__container header .header__top {
+  height: 35%;
+  width: 100%;
+  background-color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  color: whitesmoke;
+}
+
+.__container header .header__top .__name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 65%;
+  height: 100%;
+  font-size: 1.5em;
+}
+
+.__container header .header__top .__name h1 {
+  margin-left: 2em;
+}
+
+.__container header .header__top .__right {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.__container header .header__top .__right .__search {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.__container header .header__top .__right .__search .__input {
+  color: whitesmoke;
+  width: 75%;
+  border: none;
+  padding: 0.5em;
+  font-size: 1.3em;
+  background: rgba(189, 178, 178, 0.5);
+  border-radius: 20px;
+  outline: none;
+}
+
+.__container header .header__top .__right .__search .__input::placeholder {
+  color: whitesmoke;
+}
+
+.__container header .header__top .__right .__search .__input:focus {
+  border: none;
+}
+
+.__container header .header__top .__right .__profile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container header .header__top .__right .__profile .profile__img {
+  height: 100%;
+  width: 20%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container header .header__top .__right .__profile .profile__img i {
+  font-size: 3em;
+}
+
+.__container header .header__bottom {
+  height: 65%;
+  width: 100%;
+  background-color: #2be2b4;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2em;
+  color: whitesmoke;
+}
+
+.__container header .header__bottom .__home {
+  background-color: #1d5b8d;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container header .header__bottom .__home p {
+  margin-left: 0.5em;
+}
+
+.__container header .header__bottom .__dashboard {
+  background-color: #5115a0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container header .header__bottom .__dashboard p {
+  margin-left: 0.5em;
+}
+
+.__container header .header__bottom .__create {
+  background-color: #15a021;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container header .header__bottom .__create p {
+  margin-left: 0.5em;
+}
+
+.__container main {
+  height: 1600px;
+  /*background-color: #c9d7dd;*/
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container main .main__container {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.__container main .main__container .div__one {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.__container main .main__container .div__one textarea {
+  overflow: hidden;
+  margin-left: 1em;
+  min-width: 10%;
+  border-radius: 5px;
+}
+
+.__container main .main__container .div__one .one__text {
+	width: 100%;
+	min-height: 50px;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	overflow: hidden;
+	line-height: 1.4;
+}
+
+.__container main .main__container .div__one .text {
+  width: 100%;
+  height: 100%;
+  background-color: brown;
+}
+
+.__container main .main__container .div__two {
+  width: 100%;
+  z-index: 1;
+  height: auto;
+}
+
+.__container main .main__container .div__two textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+.__container main .main__container .div__three {
+  z-index: 0;
+  width: 100%;
+}
+/*==================== p*/
+.__container main .main__container .div__three p{
+ margin-bottom: 0;
+}
+.__container main .main__container .div__four .four__header p{
+ margin-bottom: 0;
+}
+
+
+.__container main .main__container .div__three .three__header {
+  letter-spacing: 2px;
+  height: 20%;
+  width: 100%;
+  background-color: #2c8ad6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+  padding: .7em;
+}
+
+.__container main .main__container .div__three .three__main {
+  width: 100%;
+}
+
+.__container main .main__container .div__three .three__main .file-upload {
+  width: 100%;
+}
+
+.__container main .main__container .div__four {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.__container main .main__container .div__four .four__header {
+  letter-spacing: 2px;
+  height: 20%;
+  width: 100%;
+  background-color: #2c8ad6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+  padding: .7em;
+}
+
+.__container main .main__container .div__four .four__main {
+  height: 55%;
+  width: 100%;
+  padding: 1em;
+  position: relative;
+}
+
+.__container main .main__container .div__four .four__main #placeholder {
+  width: 7em;
+  border: hidden;
+  color: black;
+  background-color: #a5a5a5;
+}
+
+.__container main .main__container .div__four .four__main #placeholder ::placeholder {
+  color: black;
+}
+
+.__container main .main__container .div__four .four__main #expensive {
+  position: absolute;
+  right: 0px;
+  padding: 0.2em;
+  cursor: pointer;
+  background-color: transparent;
+  overflow: hidden;
+  border: hidden;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.__container main .main__container .div__four .four__button {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.__container main .main__container .div__four .four__button button {
+  height: 50%;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.__container main .main__container .div__five {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.__container main .main__container .div__five .five__header {
+  width: 100%;
+  height: 15%;
+  background-color: #2c8ad6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+  padding: .7em;
+}
+
+.__container main .main__container .div__five .five__main {
+  height: 85%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.__container main .main__container .div__five .five__main .five__main__content {
+  align-self: flex-end;
+  height: 85%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.__container main .main__container .div__five .five__main .five__main__content hr {
+  border-left: none;
+  width: 100%;
+  height: 1%;
+}
+
+.__container main .main__container .div__five .five__main .five__main__content .five__top {
+  height: 79%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container main .main__container .div__five .five__main .five__main__content .five__bottom {
+  height: 20%;
+  width: 100%;
+  background: linear-gradient(to bottom, #379fcf, #2988b4);
+}
+
+.__container main .main__container .div__five .five__main #five__button {
+  position: absolute;
+  padding: 0.3em;
+  cursor: pointer;
+  top: 0px;
+  margin: 1em;
+}
+
+.__container main .main__container .div__six {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__container main .main__container .div__six button {
+  color: whitesmoke;
+  height: 2.5em;
+  width: 10em;
+  border-radius: 5px;
+  border: none;
+  overflow: hidden;
+  font-size: 1em;
+  letter-spacing: 1px;
+  background-color: #21ac21;
+}
+
+.file-upload {
+  background-color: #ffffff;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #1fb264;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #15824b;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #1aa059;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all 0.2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  border: 4px dashed #1fb264;
+  position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #1fb264;
+  border: 4px dashed #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #15824b;
+  padding: 60px 0;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all 0.2s ease;
+}
+
+.popup {
+  top: 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+}
+
+.popup .popup__container {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.popup .popup__container .popup__one {
+  height: 45%;
+  width: 80%;
+}
+
+.popup .popup__container .popup__one .one__header {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.popup .popup__container .popup__one .one__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+}
+
+.popup .popup__container .popup__two {
+  height: 45%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.popup .popup__container .popup__two .two__header {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.popup .popup__container .popup__two .two__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+}
+
+.popup .popup__container .popup__three {
+  height: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.popup .popup__container .popup__three .hidden__popup {
+  left: 0px;
+  margin-left: 1em;
+  position: absolute;
+  top: 0px;
+}
+
+.popup .popup__container .popup__three button {
+  height: 2.5em;
+  width: 10em;
+  cursor: pointer;
+}
+
+.fas {
+  height: 10px;
+  width: 10px;
+  color: #1aa059;
+}
+
+@media only screen and (max-width: 768px) {
+  .__search {
+    font-size: 10px;
+  }
+  main {
+    height: 1600px;
+  }
+  .main__container {
+    height: 100%;
+    width: 80%;
+  }
+  .div__one {
+   /* align-self: center;*/
+  }
+  .div__two {
+    align-self: center;
+  }
+  .div__three {
+    align-self: center;
+  }
+  .div__four {
+    align-self: center;
+  }
+  .div__five {
+    align-self: center;
+  }
+  .div__six {
+    align-self: center;
+  }
+  p {
+    font-size: 1em;
+  }
+  .header__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header__bottom p {
+    font-size: 0.5em;
+  }
+  .three__header p {
+    font-size: 0.5em;
+  }
+  .four__header p {
+    font-size: 0.5em;
+  }
+  .five__header p {
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header__bottom p {
+    font-size: 0.2em;
+  }
+  .div__one {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.__container main .main__container .div__five .five__header p{
+margin-bottom:0px;
+}
+.__container main .main__container .div__one p{
+	margin-bottom:0px;
+}
